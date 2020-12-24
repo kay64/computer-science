@@ -1,0 +1,9 @@
+[package]
+name = "computer-science"
+version = "0.1.0"
+authors = ["Anton Kukharenka <anton.kukharenka@capsilon.com>"]
+edition = "2018"
+
+
+[dependencies]
+rand="0.8.0"

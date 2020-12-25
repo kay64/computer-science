@@ -16,3 +16,23 @@ fn insertion() {
 fn selection() {
     invoke("Selection", super::selection::sort)
 }
+
+#[test]
+fn bubble() {
+    invoke("Bubble", super::bubble::sort)
+}
+
+#[test]
+fn gnome() {
+    invoke("Gnome", super::gnome::sort)
+}
+
+#[test]
+fn shaker() {
+    invoke("Shaker", super::shaker::sort)
+}
+
+#[test]
+fn merge() {
+    invoke("Merge", super::merge::sort)
+}

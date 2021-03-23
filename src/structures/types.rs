@@ -32,3 +32,13 @@ pub trait Seq<T>: ReadonlySeq<T> {
     fn get_mut(&mut self, index: usize) -> Option<&mut T>;
 }
 
+pub trait ReadonlyMap<K, V> {
+    fn get(&self, key: &K) -> Option<&V>;
+    fn size(&self) -> usize;
+}
+
+pub trait Map<K, V>: ReadonlyMap<K, V> {
+    fn get_mut(&mut self, key: &K) -> Option<&mut V>;
+    fn put(&mut self, key: K, value: V);
+    fn remove(&mut self, key: &K) -> Option<V>;
+}
